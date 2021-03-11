@@ -1,11 +1,15 @@
 pipeline {
     agent any
+    
+      environment {
+        branch = 'dev'
+    }
    
     
     stages {
         stage('Build') {
             steps {
-               sh "echo working "
+               sh "echo working $branch "
             }
         }
         stage('Test') {
