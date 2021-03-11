@@ -2,6 +2,7 @@ pipeline {
     agent any
     
       environment {
+          location="/home/ist/test/test/jenkins"
         branch = 'dev'
     }
    
